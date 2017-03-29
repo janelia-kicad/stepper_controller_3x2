@@ -131,9 +131,6 @@ NoConn ~ 3900 1500
 NoConn ~ 3900 1600
 NoConn ~ 3900 1700
 NoConn ~ 3900 1800
-NoConn ~ 3900 1900
-NoConn ~ 3900 2000
-NoConn ~ 3900 2100
 NoConn ~ 3900 2300
 $Comp
 L VEE #PWR05
@@ -165,20 +162,23 @@ Wire Wire Line
 	4450 800  4450 900 
 Connection ~ 4450 900 
 $Sheet
-S 5750 1600 950  1100
+S 5750 1600 950  1400
 U 58DAAD90
-F0 "tmc429_0" 60
-F1 "tmc429.sch" 60
+F0 "tmc429_tmc260_0" 60
+F1 "tmc429_tmc260.sch" 60
 F2 "CLK" I L 5750 1750 60 
 F3 "SCK" I L 5750 1950 60 
 F4 "MOSI" I L 5750 2050 60 
-F5 "~CS" I L 5750 2150 60 
-F6 "MISO" O R 6700 1750 60 
-F7 "~INT" O R 6700 1950 60 
-F8 "POSCOMP" O R 6700 2050 60 
-F9 "ENABLE_0" I L 5750 2350 60 
-F10 "ENABLE_1" I L 5750 2450 60 
-F11 "ENABLE_2" I L 5750 2550 60 
+F5 "MISO" O R 6700 1750 60 
+F6 "~INT" O R 6700 1950 60 
+F7 "POSCOMP" O R 6700 2050 60 
+F8 "ENABLE_0" I L 5750 2650 60 
+F9 "ENABLE_1" I L 5750 2750 60 
+F10 "ENABLE_2" I L 5750 2850 60 
+F11 "~CS_429" I L 5750 2150 60 
+F12 "~CS_260_0" I L 5750 2250 60 
+F13 "~CS_260_1" I L 5750 2350 60 
+F14 "~CS_260_2" I L 5750 2450 60 
 $EndSheet
 Wire Wire Line
 	1400 2100 1300 2100
@@ -191,7 +191,7 @@ MISO
 Wire Wire Line
 	1400 2000 1300 2000
 Text Label 1300 2000 2    60   ~ 0
-CS
+CS_429
 Wire Wire Line
 	3900 2200 4000 2200
 Text Label 4000 2200 0    60   ~ 0
@@ -211,7 +211,7 @@ MOSI
 Wire Wire Line
 	5750 2150 5650 2150
 Text Label 5650 2150 2    60   ~ 0
-CS
+CS_429
 Wire Wire Line
 	6700 1950 6800 1950
 Wire Wire Line
@@ -273,17 +273,11 @@ Wire Wire Line
 Wire Wire Line
 	4900 1050 4900 1100
 Connection ~ 4900 1100
-Wire Wire Line
-	5750 2350 5650 2350
-Text Label 5650 2350 2    60   ~ 0
+Text Label 5650 2650 2    60   ~ 0
 ENABLE_0
-Wire Wire Line
-	5750 2450 5650 2450
-Wire Wire Line
-	5750 2550 5650 2550
-Text Label 5650 2450 2    60   ~ 0
+Text Label 5650 2750 2    60   ~ 0
 ENABLE_1
-Text Label 5650 2550 2    60   ~ 0
+Text Label 5650 2850 2    60   ~ 0
 ENABLE_2
 $Comp
 L 0.1uF C1
@@ -384,4 +378,34 @@ Wire Wire Line
 	3350 3600 3450 3600
 Text Label 3450 3600 0    60   ~ 0
 CLK
+Wire Wire Line
+	3900 2100 4000 2100
+Wire Wire Line
+	3900 2000 4000 2000
+Wire Wire Line
+	3900 1900 4000 1900
+Text Label 4000 2100 0    60   ~ 0
+CS_260_0
+Text Label 4000 2000 0    60   ~ 0
+CS_260_1
+Text Label 4000 1900 0    60   ~ 0
+CS_260_2
+Wire Wire Line
+	5650 2650 5750 2650
+Wire Wire Line
+	5650 2750 5750 2750
+Wire Wire Line
+	5650 2850 5750 2850
+Text Label 5650 2450 2    60   ~ 0
+CS_260_2
+Text Label 5650 2350 2    60   ~ 0
+CS_260_1
+Text Label 5650 2250 2    60   ~ 0
+CS_260_0
+Wire Wire Line
+	5650 2250 5750 2250
+Wire Wire Line
+	5650 2350 5750 2350
+Wire Wire Line
+	5650 2450 5750 2450
 $EndSCHEMATC
