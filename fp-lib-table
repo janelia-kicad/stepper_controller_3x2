@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name stepper_controller_3x2)(type KiCad)(uri ${KIPRJMOD}/stepper_controller_3x2.pretty)(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri ${KILIBS}/footprints.pretty)(options "")(descr ""))
+)
