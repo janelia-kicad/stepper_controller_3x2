@@ -164,8 +164,8 @@ Connection ~ 4450 900
 $Sheet
 S 5750 1600 950  1400
 U 58DAAD90
-F0 "tmc429_tmc260_0" 60
-F1 "tmc429_tmc260.sch" 60
+F0 "tmc429_tmc26x_0" 60
+F1 "tmc429_tmc26x.sch" 60
 F2 "CLK" I L 5750 1750 60 
 F3 "SCK" I L 5750 1950 60 
 F4 "MOSI" I L 5750 2050 60 
@@ -176,9 +176,9 @@ F8 "ENABLE_0" I L 5750 2650 60
 F9 "ENABLE_1" I L 5750 2750 60 
 F10 "ENABLE_2" I L 5750 2850 60 
 F11 "~CS_429" I L 5750 2150 60 
-F12 "~CS_260_0" I L 5750 2250 60 
-F13 "~CS_260_1" I L 5750 2350 60 
-F14 "~CS_260_2" I L 5750 2450 60 
+F12 "~CS_26X_0" I L 5750 2250 60 
+F13 "~CS_26X_1" I L 5750 2350 60 
+F14 "~CS_26X_2" I L 5750 2450 60 
 $EndSheet
 Wire Wire Line
 	1400 2100 1300 2100
@@ -385,11 +385,11 @@ Wire Wire Line
 Wire Wire Line
 	3900 1900 4000 1900
 Text Label 4000 2100 0    60   ~ 0
-CS_260_0
+CS_26X_0
 Text Label 4000 2000 0    60   ~ 0
-CS_260_1
+CS_26X_1
 Text Label 4000 1900 0    60   ~ 0
-CS_260_2
+CS_26X_2
 Wire Wire Line
 	5650 2650 5750 2650
 Wire Wire Line
@@ -397,11 +397,11 @@ Wire Wire Line
 Wire Wire Line
 	5650 2850 5750 2850
 Text Label 5650 2450 2    60   ~ 0
-CS_260_2
+CS_26X_2
 Text Label 5650 2350 2    60   ~ 0
-CS_260_1
+CS_26X_1
 Text Label 5650 2250 2    60   ~ 0
-CS_260_0
+CS_26X_0
 Wire Wire Line
 	5650 2250 5750 2250
 Wire Wire Line

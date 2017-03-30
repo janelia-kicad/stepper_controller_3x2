@@ -318,11 +318,11 @@ REF_2
 Text Label 6250 4550 0    60   ~ 0
 REFR_2
 Text HLabel 5000 2450 0    60   Input ~ 0
-~CS_260_0
+~CS_26X_0
 Text HLabel 5000 3650 0    60   Input ~ 0
-~CS_260_1
+~CS_26X_1
 Text HLabel 5000 4850 0    60   Input ~ 0
-~CS_260_2
+~CS_26X_2
 Wire Wire Line
 	5000 2450 5100 2450
 Wire Wire Line
