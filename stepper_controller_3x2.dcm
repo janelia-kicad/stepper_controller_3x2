@@ -5,4 +5,9 @@ D Connector, single row, 01x04
 K connector
 $ENDCMP
 #
+$CMP TERM_BLK_HDR_4POS_VERT_0.150IN
+D Connector, single row, 01x04
+K connector
+$ENDCMP
+#
 #End Doc Library
