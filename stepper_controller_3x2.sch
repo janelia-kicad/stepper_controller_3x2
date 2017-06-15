@@ -161,8 +161,8 @@ Connection ~ 4450 900
 $Sheet
 S 5750 1600 950  1400
 U 58DAAD90
-F0 "tmc429_tmc26x_0" 60
-F1 "tmc429_tmc26x.sch" 60
+F0 "tmc429_driver_0" 60
+F1 "tmc429_driver.sch" 60
 F2 "CLK" I L 5750 1750 60 
 F3 "SCK" I L 5750 1950 60 
 F4 "MOSI" I L 5750 2050 60 
