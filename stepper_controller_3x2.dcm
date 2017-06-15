@@ -1,11 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP TERM_BLK_HDR_4POS_VERT_0.138IN
+$CMP TERM_BLK_HDR_4POS_VERT_0.150IN
 D Connector, single row, 01x04
 K connector
 $ENDCMP
 #
-$CMP TERM_BLK_HDR_4POS_VERT_0.150IN
+$CMP TERM_BLK_HDR_4POS_VERT_0.2IN
 D Connector, single row, 01x04
 K connector
 $ENDCMP
