@@ -30,12 +30,11 @@ LIBS:contrib
 LIBS:valves
 LIBS:stepper_controller_3x2
 LIBS:components
-LIBS:stepper_controller_3x2-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -58,8 +57,8 @@ P 10200 5750
 AR Path="/58DAAD90/58DB6271/58DB7355" Ref="U2"  Part="1" 
 AR Path="/58DAAD90/58DF1FF3/58DB7355" Ref="U3"  Part="1" 
 AR Path="/58DAAD90/58DF28B3/58DB7355" Ref="U4"  Part="1" 
-F 0 "U2" H 10200 6497 60  0000 C CNN
-F 1 "MAX6817" H 10200 6391 60  0000 C CNN
+F 0 "U2" H 10400 6000 60  0000 C CNN
+F 1 "MAX6817" H 10450 5500 60  0000 C CNN
 F 2 "stepper_controller_3x2:MAX6817" H 10350 5400 60  0001 C CNN
 F 3 "" H 10200 5750 60  0000 C CNN
 F 4 "digikey" H 10550 5600 60  0001 C CNN "Vendor"
@@ -103,13 +102,9 @@ Wire Wire Line
 	9150 5400 9150 5350
 Wire Wire Line
 	9150 5850 9150 5800
-Wire Wire Line
-	9800 5500 9700 5500
-Wire Wire Line
-	9800 5750 9700 5750
-Text Label 9700 5500 2    60   ~ 0
+Text Label 9700 5800 2    60   ~ 0
 REF_B
-Text Label 9700 5750 2    60   ~ 0
+Text Label 9700 5900 2    60   ~ 0
 REFR_B
 $Comp
 L GND #PWR024
@@ -126,19 +121,11 @@ F 3 "" H 10200 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10600 5250 10650 5250
-Wire Wire Line
-	10650 5250 10650 5200
-Wire Wire Line
 	10200 6050 10200 6100
-Text HLabel 10700 5500 2    60   Output ~ 0
+Text HLabel 10700 5800 2    60   Output ~ 0
 REF
-Text HLabel 10700 5750 2    60   Output ~ 0
+Text HLabel 10700 5900 2    60   Output ~ 0
 REFR
-Wire Wire Line
-	10600 5500 10700 5500
-Wire Wire Line
-	10600 5750 10700 5750
 Wire Wire Line
 	8350 5450 8250 5450
 Wire Wire Line
@@ -171,15 +158,15 @@ Connection ~ 8300 5750
 $Comp
 L +3V3 #PWR026
 U 1 1 58DC30A2
-P 10650 5200
+P 10200 5400
 AR Path="/58DAAD90/58DB6271/58DC30A2" Ref="#PWR026"  Part="1" 
 AR Path="/58DAAD90/58DF1FF3/58DC30A2" Ref="#PWR038"  Part="1" 
 AR Path="/58DAAD90/58DF28B3/58DC30A2" Ref="#PWR050"  Part="1" 
-F 0 "#PWR026" H 10650 5050 50  0001 C CNN
-F 1 "+3V3" H 10665 5373 50  0000 C CNN
-F 2 "" H 10650 5200 50  0001 C CNN
-F 3 "" H 10650 5200 50  0001 C CNN
-	1    10650 5200
+F 0 "#PWR026" H 10200 5250 50  0001 C CNN
+F 1 "+3V3" H 10215 5573 50  0000 C CNN
+F 2 "" H 10200 5400 50  0001 C CNN
+F 3 "" H 10200 5400 50  0001 C CNN
+	1    10200 5400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -455,4 +442,14 @@ F 6 "TERM BLOCK HDR 4POS VERT 5.08MM" H 8850 4150 60  0001 C CNN "Description"
 	1    8550 3600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	10200 5400 10200 5450
+Wire Wire Line
+	9700 5800 9800 5800
+Wire Wire Line
+	9700 5900 9800 5900
+Wire Wire Line
+	10600 5800 10700 5800
+Wire Wire Line
+	10600 5900 10700 5900
 $EndSCHEMATC
