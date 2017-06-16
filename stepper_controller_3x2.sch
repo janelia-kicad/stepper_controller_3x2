@@ -34,7 +34,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 5
+Sheet 1 3
 Title "stepper_controller_3x2"
 Date ""
 Rev "1.0"
@@ -170,11 +170,7 @@ F6 "~INT" O R 6800 1950 60
 F7 "POSCOMP" O R 6800 2050 60 
 F8 "~CS_429" I L 5750 2150 60 
 F9 "~CS_DRIVER_0" I L 5750 2250 60 
-F10 "~CS_DRIVER_1" I L 5750 2350 60 
-F11 "~CS_DRIVER_2" I L 5750 2450 60 
 F12 "~ENABLE_0" I L 5750 2650 60 
-F13 "~ENABLE_1" I L 5750 2750 60 
-F14 "~ENABLE_2" I L 5750 2850 60 
 $EndSheet
 Wire Wire Line
 	1400 2100 1300 2100
@@ -220,10 +216,6 @@ Wire Wire Line
 	6800 1750 6900 1750
 Text Label 6900 1750 0    60   ~ 0
 MISO
-Wire Wire Line
-	1400 1300 1300 1300
-Wire Wire Line
-	1400 1400 1300 1400
 Text Label 1300 1500 2    60   ~ 0
 INT
 Text Label 1300 1600 2    60   ~ 0
@@ -236,10 +228,6 @@ Wire Wire Line
 	1400 1600 1300 1600
 Text Label 1300 1200 2    60   ~ 0
 ENABLE_0
-Text Label 1300 1300 2    60   ~ 0
-ENABLE_1
-Text Label 1300 1400 2    60   ~ 0
-ENABLE_2
 $Comp
 L +3V3 #PWR07
 U 1 1 58DAE339
@@ -271,10 +259,6 @@ Wire Wire Line
 Connection ~ 4900 1100
 Text Label 5650 2650 2    60   ~ 0
 ENABLE_0
-Text Label 5650 2750 2    60   ~ 0
-ENABLE_1
-Text Label 5650 2850 2    60   ~ 0
-ENABLE_2
 $Comp
 L 0.1uF C1
 U 1 1 58DC3529
@@ -376,34 +360,14 @@ Text Label 4350 3700 0    60   ~ 0
 CLK
 Wire Wire Line
 	3900 2100 4000 2100
-Wire Wire Line
-	3900 2000 4000 2000
-Wire Wire Line
-	3900 1900 4000 1900
 Text Label 4000 2100 0    60   ~ 0
 CS_DRIVER_0
-Text Label 4000 2000 0    60   ~ 0
-CS_DRIVER_1
-Text Label 4000 1900 0    60   ~ 0
-CS_DRIVER_2
 Wire Wire Line
 	5650 2650 5750 2650
-Wire Wire Line
-	5650 2750 5750 2750
-Wire Wire Line
-	5650 2850 5750 2850
-Text Label 5650 2450 2    60   ~ 0
-CS_DRIVER_2
-Text Label 5650 2350 2    60   ~ 0
-CS_DRIVER_1
 Text Label 5650 2250 2    60   ~ 0
 CS_DRIVER_0
 Wire Wire Line
 	5650 2250 5750 2250
-Wire Wire Line
-	5650 2350 5750 2350
-Wire Wire Line
-	5650 2450 5750 2450
 NoConn ~ 3900 1600
 NoConn ~ 3900 1700
 NoConn ~ 3900 1800
@@ -509,4 +473,8 @@ Wire Wire Line
 	2250 3700 2300 3700
 Wire Wire Line
 	2300 3700 2300 3650
+NoConn ~ 3900 1900
+NoConn ~ 3900 2000
+NoConn ~ 1400 1300
+NoConn ~ 1400 1400
 $EndSCHEMATC
