@@ -3,7 +3,7 @@
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "no-vcs-found-36e5906~58~ubuntu16.04.1")
+    (host_version "no-vcs-found-1466d0c~58~ubuntu16.04.1")
   )
   (resolution um 10)
   (unit um)
@@ -37,21 +37,18 @@
       (place MDB1 107315 -88900 front 0 (PN MODULAR_DEVICE_BASE_3X2_MALE))
     )
     (component stepper_controller_3x2:SM1210
-      (place C1 88900 -85090 back 90 (PN 0.1uF))
-      (place C2 91440 -95250 back 270 (PN 0.1uF))
+      (place C1 113665 -92710 back 90 (PN 0.1uF))
+      (place C2 88900 -92710 back 270 (PN 0.1uF))
       (place C5 102870 -85090 back 270 (PN 0.1uF))
     )
     (component stepper_controller_3x2:CTS_SMD_4_7X5MM
-      (place CLK1 95885 -85090 back 180 (PN CLK_32MHZ))
+      (place CLK1 106680 -92710 back 0 (PN CLK_32MHZ))
     )
     (component "stepper_controller_3x2:QFN-5x5-32"
-      (place U1 98425 -95885 back 0 (PN TMC429))
-    )
-    (component stepper_controller_3x2:C_ELEC_12.5
-      (place C3 112395 -94615 front 90 (PN 100uF_POL))
+      (place U1 96520 -92710 back 0 (PN TMC429))
     )
     (component stepper_controller_3x2:SM1210::1
-      (place C4 122555 -93980 back 180 (PN 10uF))
+      (place C4 122555 -92710 back 180 (PN 10uF))
     )
     (component stepper_controller_3x2:CFP15
       (place D1 144145 -81915 back 180 (PN diode_schottky_45V_10A))
@@ -70,6 +67,9 @@
     )
     (component stepper_controller_3x2:MAX6817
       (place U2 107950 -85090 back 90 (PN MAX6817))
+    )
+    (component stepper_controller_3x2:C_ELEC_10
+      (place C3 113665 -94615 front 90 (PN 220uF_POL))
     )
   )
   (library
@@ -218,34 +218,6 @@
       (pin Rect[T]Pad_250x2000_um 26 1250 3000)
       (pin Rect[T]Pad_250x2000_um 25 1750 3000)
       (pin Rect[A]Pad_3400x3400_um PAD 0 0)
-    )
-    (image stepper_controller_3x2:C_ELEC_12.5
-      (outline (path signal 250  -6000 1750  -6000 -1750))
-      (outline (path signal 250  -5750 2500  -5750 -2500))
-      (outline (path signal 250  -5500 3000  -5500 -3000))
-      (outline (path signal 250  -5250 3300  -5250 -3300))
-      (outline (path signal 250  -5000 3750  -5000 -3750))
-      (outline (path signal 250  -4750 4000  -4750 -4000))
-      (outline (path signal 250  -4500 4250  -4500 -4250))
-      (outline (path signal 250  -4250 4500  -4250 -4500))
-      (outline (path signal 250  -4000 4750  -4000 -4750))
-      (outline (path signal 250  -6500 6500  5500 6500))
-      (outline (path signal 250  5500 6500  6500 5500))
-      (outline (path signal 250  6500 5500  6500 -5500))
-      (outline (path signal 250  6500 -5500  5500 -6500))
-      (outline (path signal 250  5500 -6500  -6500 -6500))
-      (outline (path signal 50  -6350 5600  6350 5600))
-      (outline (path signal 50  6350 5600  6350 -5600))
-      (outline (path signal 50  6350 -5600  -6350 -5600))
-      (outline (path signal 50  -6350 -5600  -6350 5600))
-      (outline (path signal 250  -6500 6500  -6500 -6500))
-      (outline (path signal 250  6250 0  5944.1 -1931.36  5056.36 -3673.66  3673.66 -5056.36
-            1931.36 -5944.1  0 -6250  -1931.36 -5944.1  -3673.66 -5056.36
-            -5056.36 -3673.66  -5944.1 -1931.36  -6250 0  -5944.1 1931.36
-            -5056.36 3673.66  -3673.66 5056.36  -1931.36 5944.1  0 6250
-            1931.36 5944.1  3673.66 5056.36  5056.36 3673.66  5944.1 1931.36))
-      (pin Rect[T]Pad_6750x3300_um 1 4475 0)
-      (pin Rect[T]Pad_6750x3300_um 2 -4475 0)
     )
     (image stepper_controller_3x2:SM1210::1
       (outline (path signal 127  -762 1397  -2286 1397))
@@ -419,6 +391,25 @@
       (pin Rect[T]Pad_1330.96x558.8_um 5 1198.88 0)
       (pin Rect[T]Pad_1330.96x558.8_um 6 1198.88 949.96)
     )
+    (image stepper_controller_3x2:C_ELEC_10
+      (outline (path signal 250  -5150 5150  4150 5150))
+      (outline (path signal 250  4150 5150  5150 4150))
+      (outline (path signal 250  5150 4150  5150 -4150))
+      (outline (path signal 250  5150 -4150  4150 -5150))
+      (outline (path signal 250  4150 -5150  -5150 -5150))
+      (outline (path signal 50  -5100 4350  5100 4350))
+      (outline (path signal 50  5100 4350  5100 -4350))
+      (outline (path signal 50  5100 -4350  -5100 -4350))
+      (outline (path signal 50  -5100 -4350  -5100 4350))
+      (outline (path signal 250  -5150 5150  -5150 -5150))
+      (outline (path signal 250  5000 0  4755.28 -1545.09  4045.09 -2938.93  2938.93 -4045.09
+            1545.09 -4755.28  0 -5000  -1545.09 -4755.28  -2938.93 -4045.09
+            -4045.09 -2938.93  -4755.28 -1545.09  -5000 0  -4755.28 1545.09
+            -4045.09 2938.93  -2938.93 4045.09  -1545.09 4755.28  0 5000
+            1545.09 4755.28  2938.93 4045.09  4045.09 2938.93  4755.28 1545.09))
+      (pin Rect[T]Pad_4100x2000_um 1 4350 0)
+      (pin Rect[T]Pad_4100x2000_um 2 -4350 0)
+    )
     (padstack Round[A]Pad_1930.4_um
       (shape (circle F.Cu 1930.4))
       (shape (circle B.Cu 1930.4))
@@ -481,8 +472,8 @@
       (shape (rect F.Cu -1900 -2480 1900 2480))
       (attach off)
     )
-    (padstack Rect[T]Pad_6750x3300_um
-      (shape (rect F.Cu -3375 -1650 3375 1650))
+    (padstack Rect[T]Pad_4100x2000_um
+      (shape (rect F.Cu -2050 -1000 2050 1000))
       (attach off)
     )
     (padstack Rect[T]Pad_1270x2540_um
@@ -514,8 +505,8 @@
   )
   (network
     (net GND
-      (pins MDB1-GND C1-2 C2-2 CLK1-2 U1-23 U1-6 U1-4 U1-25 U1-PAD C3-2 C4-2 C5-2
-        P1-2 SS1-16 SS1-10 T2-4 T2-2 U2-2)
+      (pins MDB1-GND C1-2 C2-2 CLK1-2 U1-23 U1-6 U1-4 U1-25 U1-PAD C4-2 C5-2 P1-2
+        SS1-16 SS1-10 T2-4 T2-2 U2-2 C3-2)
     )
     (net +3V3
       (pins MDB1-3V3 C1-1 C2-1 CLK1-4 CLK1-1 U1-22 U1-21 U1-3 U1-2 U1-1 U1-13 U1-29
@@ -543,7 +534,7 @@
       (pins MDB1-13 U1-8 SS1-6)
     )
     (net VDD
-      (pins MDB1-VDD C3-1 C4-1 D1-1 SS1-9)
+      (pins MDB1-VDD C4-1 D1-1 SS1-9 C3-1)
     )
     (net /CS_429
       (pins MDB1-10 U1-7)
@@ -584,7 +575,7 @@
     (net VAA
       (pins D1-2 D1-2@1 P1-1)
     )
-    (class kicad_default
+    (class kicad_default ""
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
@@ -620,20 +611,15 @@
         (clearance 101.7)
       )
     )
-    (class SIGNAL "" /CLK /CS_429 /CS_DRIVER_0 /CS_DRIVER_1 /CS_DRIVER_2 /ENABLE_0
-      /ENABLE_1 /ENABLE_2 /INT /MISO /MOSI /POSCOMP /SCK /tmc429_driver_0/DIR_0
-      /tmc429_driver_0/DIR_1 /tmc429_driver_0/DIR_2 /tmc429_driver_0/REFR_0
-      /tmc429_driver_0/REFR_1 /tmc429_driver_0/REFR_2 /tmc429_driver_0/REF_0
-      /tmc429_driver_0/REF_1 /tmc429_driver_0/REF_2 /tmc429_driver_0/STEP_0
-      /tmc429_driver_0/STEP_1 /tmc429_driver_0/STEP_2 /tmc429_driver_0/stepper_0/REFR_B
-      /tmc429_driver_0/stepper_0/REF_B /tmc429_driver_0/stepper_1/REFR_B /tmc429_driver_0/stepper_1/REF_B
-      /tmc429_driver_0/stepper_2/REFR_B /tmc429_driver_0/stepper_2/REF_B "Net-(MDB1-Pad15)"
-      "Net-(MDB1-Pad16)" "Net-(MDB1-Pad17)" "Net-(MDB1-Pad18)" "Net-(MDB1-Pad19)"
-      "Net-(MDB1-Pad20)" "Net-(MDB1-Pad21)" "Net-(MDB1-Pad22)" "Net-(MDB1-Pad23)"
-      "Net-(MDB1-Pad24)" "Net-(MDB1-Pad25)" "Net-(MDB1-Pad28)" "Net-(MDB1-Pad29)"
-      "Net-(MDB1-Pad3)" "Net-(MDB1-Pad30)" "Net-(MDB1-Pad4)" "Net-(MDB1-Pad9)"
-      "Net-(MDB1-PadAGND)" "Net-(MDB1-PadAREF)" "Net-(MDB1-PadDAC)" "Net-(U1-Pad18)"
-      "Net-(U1-Pad19)" "Net-(U1-Pad20)" "Net-(U1-Pad27)"
+    (class SIGNAL /CLK /CS_429 /CS_DRIVER_0 /ENABLE_0 /INT /MISO /MOSI /POSCOMP
+      /SCK /tmc429_driver_0/DIR_0 /tmc429_driver_0/REFR_0 /tmc429_driver_0/REF_0
+      /tmc429_driver_0/STEP_0 /tmc429_driver_0/stepper_0/REFR_B /tmc429_driver_0/stepper_0/REF_B
+      "Net-(MDB1-Pad15)" "Net-(MDB1-Pad16)" "Net-(MDB1-Pad17)" "Net-(MDB1-Pad18)"
+      "Net-(MDB1-Pad19)" "Net-(MDB1-Pad20)" "Net-(MDB1-Pad21)" "Net-(MDB1-Pad22)"
+      "Net-(MDB1-Pad23)" "Net-(MDB1-Pad24)" "Net-(MDB1-Pad25)" "Net-(MDB1-Pad28)"
+      "Net-(MDB1-Pad29)" "Net-(MDB1-Pad3)" "Net-(MDB1-Pad30)" "Net-(MDB1-Pad4)"
+      "Net-(MDB1-Pad9)" "Net-(MDB1-PadAGND)" "Net-(MDB1-PadAREF)" "Net-(MDB1-PadDAC)"
+      "Net-(U1-Pad18)" "Net-(U1-Pad19)" "Net-(U1-Pad20)" "Net-(U1-Pad27)"
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
@@ -643,10 +629,8 @@
       )
     )
     (class SUPERPOWER /tmc429_driver_0/stepper_0/A_+ "/tmc429_driver_0/stepper_0/A_-"
-      /tmc429_driver_0/stepper_0/B_+ "/tmc429_driver_0/stepper_0/B_-" /tmc429_driver_0/stepper_1/A_+
-      "/tmc429_driver_0/stepper_1/A_-" /tmc429_driver_0/stepper_1/B_+ "/tmc429_driver_0/stepper_1/B_-"
-      /tmc429_driver_0/stepper_2/A_+ "/tmc429_driver_0/stepper_2/A_-" /tmc429_driver_0/stepper_2/B_+
-      "/tmc429_driver_0/stepper_2/B_-" VAA VDD
+      /tmc429_driver_0/stepper_0/B_+ "/tmc429_driver_0/stepper_0/B_-" VAA
+      VDD
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
