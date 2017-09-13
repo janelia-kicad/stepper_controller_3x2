@@ -56,7 +56,7 @@ F 4 "1460-1071-1-ND" H 2650 3700 60  0001 C CNN "PartNumber"
 F 5 "IC MOTOR CONTROLLER SPI 32QFN" H 2750 3800 60  0001 C CNN "Description"
 F 6 "digikey" H 2850 3900 60  0001 C CNN "Vendor"
 	1    2200 2650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text HLabel 1500 2250 0    60   Input ~ 0
 CLK
@@ -81,7 +81,7 @@ F 1 "+3V3" H 2215 1623 50  0000 C CNN
 F 2 "" H 2200 1450 50  0001 C CNN
 F 3 "" H 2200 1450 50  0001 C CNN
 	1    2200 1450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR020
@@ -92,7 +92,7 @@ F 1 "GND" H 2205 3677 50  0000 C CNN
 F 2 "" H 2200 3850 50  0001 C CNN
 F 3 "" H 2200 3850 50  0001 C CNN
 	1    2200 3850
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L 0.1uF C2
@@ -103,10 +103,10 @@ F 1 "0.1uF" H 1300 1300 30  0000 C CNN
 F 2 "stepper_controller_3x2:SM1210" H 1338 1150 30  0001 C CNN
 F 3 "" H 1300 1300 60  0000 C CNN
 F 4 "digikey" H 1400 1500 60  0001 C CNN "Vendor"
-F 5 "478-3586-1-ND" H 1500 1600 60  0001 C CNN "PartNumber"
+F 5 "399-13229-1-ND" H 1500 1600 60  0001 C CNN "PartNumber"
 F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 1600 1700 60  0001 C CNN "Description"
 	1    1300 1300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +3V3 #PWR021
@@ -117,7 +117,7 @@ F 1 "+3V3" H 1315 1223 50  0000 C CNN
 F 2 "" H 1300 1050 50  0001 C CNN
 F 3 "" H 1300 1050 50  0001 C CNN
 	1    1300 1050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR022
@@ -128,7 +128,7 @@ F 1 "GND" H 1305 1377 50  0000 C CNN
 F 2 "" H 1300 1550 50  0001 C CNN
 F 3 "" H 1300 1550 50  0001 C CNN
 	1    1300 1550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Label 2900 2000 0    60   ~ 0
 STEP_0
@@ -141,15 +141,15 @@ S 5100 1850 1050 1200
 U 58DB6271
 F0 "stepper_0" 60
 F1 "stepper.sch" 60
-F2 "STEP" I L 5100 2000 60 
-F3 "DIR" I L 5100 2150 60 
-F4 "REF" O R 6150 2000 60 
-F5 "REFR" O R 6150 2150 60 
-F6 "~CS" I L 5100 2900 60 
-F7 "~ENABLE" I L 5100 2300 60 
-F8 "SCK" I L 5100 2450 60 
-F9 "MOSI" I L 5100 2600 60 
-F10 "MISO" O L 5100 2750 60 
+F2 "STEP" I L 5100 2000 60
+F3 "DIR" I L 5100 2150 60
+F4 "REF" O R 6150 2000 60
+F5 "REFR" O R 6150 2150 60
+F6 "~CS" I L 5100 2900 60
+F7 "~ENABLE" I L 5100 2300 60
+F8 "SCK" I L 5100 2450 60
+F9 "MOSI" I L 5100 2600 60
+F10 "MISO" O L 5100 2750 60
 $EndSheet
 Text Label 5000 2000 2    60   ~ 0
 STEP_0
@@ -276,7 +276,7 @@ F 1 "+3V3" H 3615 2773 50  0000 C CNN
 F 2 "" H 3600 2600 50  0001 C CNN
 F 3 "" H 3600 2600 50  0001 C CNN
 	1    3600 2600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Label 3700 2800 0    60   ~ 0
 REFR_1
@@ -298,7 +298,7 @@ F 1 "+3V3" H 3615 3273 50  0000 C CNN
 F 2 "" H 3600 3100 50  0001 C CNN
 F 3 "" H 3600 3100 50  0001 C CNN
 	1    3600 3100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3600 3100 3600 3300
