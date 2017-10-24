@@ -1,35 +1,8 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 3
 LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:stepper_controller_3x2
 LIBS:components
+LIBS:stepper_controller_3x2-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -56,7 +29,7 @@ F 4 "1460-1071-1-ND" H 2650 3700 60  0001 C CNN "PartNumber"
 F 5 "IC MOTOR CONTROLLER SPI 32QFN" H 2750 3800 60  0001 C CNN "Description"
 F 6 "digikey" H 2850 3900 60  0001 C CNN "Vendor"
 	1    2200 2650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text HLabel 1500 2250 0    60   Input ~ 0
 CLK
@@ -81,7 +54,7 @@ F 1 "+3V3" H 2215 1623 50  0000 C CNN
 F 2 "" H 2200 1450 50  0001 C CNN
 F 3 "" H 2200 1450 50  0001 C CNN
 	1    2200 1450
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR020
@@ -92,13 +65,13 @@ F 1 "GND" H 2205 3677 50  0000 C CNN
 F 2 "" H 2200 3850 50  0001 C CNN
 F 3 "" H 2200 3850 50  0001 C CNN
 	1    2200 3850
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
-L 0.1uF C2
+L 0.1uF C4
 U 1 1 58DAE7A2
 P 1300 1300
-F 0 "C2" H 1300 1400 40  0000 L CNN
+F 0 "C4" H 1300 1400 40  0000 L CNN
 F 1 "0.1uF" H 1300 1300 30  0000 C CNN
 F 2 "stepper_controller_3x2:SM1210" H 1338 1150 30  0001 C CNN
 F 3 "" H 1300 1300 60  0000 C CNN
@@ -106,7 +79,7 @@ F 4 "digikey" H 1400 1500 60  0001 C CNN "Vendor"
 F 5 "399-13229-1-ND" H 1500 1600 60  0001 C CNN "PartNumber"
 F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 1600 1700 60  0001 C CNN "Description"
 	1    1300 1300
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L +3V3 #PWR021
@@ -117,7 +90,7 @@ F 1 "+3V3" H 1315 1223 50  0000 C CNN
 F 2 "" H 1300 1050 50  0001 C CNN
 F 3 "" H 1300 1050 50  0001 C CNN
 	1    1300 1050
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR022
@@ -128,28 +101,28 @@ F 1 "GND" H 1305 1377 50  0000 C CNN
 F 2 "" H 1300 1550 50  0001 C CNN
 F 3 "" H 1300 1550 50  0001 C CNN
 	1    1300 1550
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Label 2900 2000 0    60   ~ 0
 STEP_0
 Text Label 2900 2100 0    60   ~ 0
 DIR_0
-Text HLabel 5000 2300 0    60   Input ~ 0
+Text HLabel 1750 5350 0    60   Input ~ 0
 ~ENABLE_0
 $Sheet
 S 5100 1850 1050 1200
 U 58DB6271
 F0 "stepper_0" 60
 F1 "stepper.sch" 60
-F2 "STEP" I L 5100 2000 60
-F3 "DIR" I L 5100 2150 60
-F4 "REF" O R 6150 2000 60
-F5 "REFR" O R 6150 2150 60
-F6 "~CS" I L 5100 2900 60
-F7 "~ENABLE" I L 5100 2300 60
-F8 "SCK" I L 5100 2450 60
-F9 "MOSI" I L 5100 2600 60
-F10 "MISO" O L 5100 2750 60
+F2 "STEP" I L 5100 2000 60 
+F3 "DIR" I L 5100 2150 60 
+F4 "REF" O R 6150 2000 60 
+F5 "REFR" O R 6150 2150 60 
+F6 "~CS" I L 5100 2900 60 
+F7 "~ENABLE" I L 5100 2300 60 
+F8 "SCK" I L 5100 2450 60 
+F9 "MOSI" I L 5100 2600 60 
+F10 "MISO" O L 5100 2750 60 
 $EndSheet
 Text Label 5000 2000 2    60   ~ 0
 STEP_0
@@ -163,11 +136,11 @@ Text Label 2900 2200 0    60   ~ 0
 REF_0
 Text Label 2900 2300 0    60   ~ 0
 REFR_0
-Text HLabel 5000 2900 0    60   Input ~ 0
+Text HLabel 1750 5450 0    60   Input ~ 0
 ~CS_DRIVER_0
-Text HLabel 5000 2450 0    60   Input ~ 0
+Text HLabel 1750 5150 0    60   Input ~ 0
 SCK
-Text HLabel 5000 2600 0    60   Input ~ 0
+Text HLabel 1750 5250 0    60   Input ~ 0
 MOSI
 Text HLabel 5000 2750 0    60   Output ~ 0
 MISO
@@ -276,7 +249,7 @@ F 1 "+3V3" H 3615 2773 50  0000 C CNN
 F 2 "" H 3600 2600 50  0001 C CNN
 F 3 "" H 3600 2600 50  0001 C CNN
 	1    3600 2600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Label 3700 2800 0    60   ~ 0
 REFR_1
@@ -298,9 +271,155 @@ F 1 "+3V3" H 3615 3273 50  0000 C CNN
 F 2 "" H 3600 3100 50  0001 C CNN
 F 3 "" H 3600 3100 50  0001 C CNN
 	1    3600 3100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3600 3100 3600 3300
 Connection ~ 3600 3150
+$Comp
+L SN74ABT541BDWR U?
+U 1 1 59EFAB85
+P 2200 5500
+F 0 "U?" H 2400 6150 60  0000 C CNN
+F 1 "SN74ABT541BDWR" V 2350 5500 60  0000 C CNN
+F 2 "stepper_controller_3x2:SOIC_20" H 2300 6050 60  0001 C CNN
+F 3 "" H 2200 5500 60  0001 C CNN
+F 4 "digikey" H 2300 4700 60  0001 C CNN "Vendor"
+F 5 "296-14668-1-ND" H 2400 4800 60  0001 C CNN "PartNumber"
+F 6 "Buffer Non-Inverting 1 Element 8 Bit per Element Push-Pull Output 20-SOIC" H 2500 4900 60  0001 C CNN "Description"
+	1    2200 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59EFAFE8
+P 2200 6250
+F 0 "#PWR?" H 2200 6000 50  0001 C CNN
+F 1 "GND" H 2205 6077 50  0000 C CNN
+F 2 "" H 2200 6250 50  0001 C CNN
+F 3 "" H 2200 6250 50  0001 C CNN
+	1    2200 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6200 2200 6250
+$Comp
+L 0.1uF C5
+U 1 1 59EFB229
+P 850 5500
+F 0 "C5" H 850 5600 40  0000 L CNN
+F 1 "0.1uF" H 850 5500 30  0000 C CNN
+F 2 "stepper_controller_3x2:SM1210" H 888 5350 30  0001 C CNN
+F 3 "" H 850 5500 60  0000 C CNN
+F 4 "digikey" H 950 5700 60  0001 C CNN "Vendor"
+F 5 "399-13229-1-ND" H 1050 5800 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 1150 5900 60  0001 C CNN "Description"
+	1    850  5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59EFB965
+P 1800 6100
+F 0 "#PWR?" H 1800 5850 50  0001 C CNN
+F 1 "GND" H 1805 5927 50  0000 C CNN
+F 2 "" H 1800 6100 50  0001 C CNN
+F 3 "" H 1800 6100 50  0001 C CNN
+	1    1800 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 5950 1800 5950
+Wire Wire Line
+	1800 5550 1800 6100
+Wire Wire Line
+	1850 6050 1800 6050
+Connection ~ 1800 6050
+$Comp
+L GND #PWR?
+U 1 1 59EFBC0B
+P 850 5750
+F 0 "#PWR?" H 850 5500 50  0001 C CNN
+F 1 "GND" H 855 5577 50  0000 C CNN
+F 2 "" H 850 5750 50  0001 C CNN
+F 3 "" H 850 5750 50  0001 C CNN
+	1    850  5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 59EFBCB7
+P 850 5250
+F 0 "#PWR?" H 850 5100 50  0001 C CNN
+F 1 "+5V" H 865 5423 50  0000 C CNN
+F 2 "" H 850 5250 50  0001 C CNN
+F 3 "" H 850 5250 50  0001 C CNN
+	1    850  5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 59EFBD0B
+P 2200 4750
+F 0 "#PWR?" H 2200 4600 50  0001 C CNN
+F 1 "+5V" H 2215 4923 50  0000 C CNN
+F 2 "" H 2200 4750 50  0001 C CNN
+F 3 "" H 2200 4750 50  0001 C CNN
+	1    2200 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  5250 850  5300
+Wire Wire Line
+	850  5700 850  5750
+Wire Wire Line
+	2200 4800 2200 4750
+Wire Wire Line
+	1850 5150 1750 5150
+Wire Wire Line
+	1850 5250 1750 5250
+Wire Wire Line
+	1850 5350 1750 5350
+Wire Wire Line
+	1850 5450 1750 5450
+Wire Wire Line
+	1850 5550 1800 5550
+Connection ~ 1800 5950
+Wire Wire Line
+	1850 5850 1800 5850
+Connection ~ 1800 5850
+Wire Wire Line
+	1850 5750 1800 5750
+Connection ~ 1800 5750
+Wire Wire Line
+	1850 5650 1800 5650
+Connection ~ 1800 5650
+NoConn ~ 2550 5550
+NoConn ~ 2550 5650
+NoConn ~ 2550 5750
+NoConn ~ 2550 5850
+Wire Wire Line
+	2550 5150 2650 5150
+Wire Wire Line
+	2550 5250 2650 5250
+Wire Wire Line
+	2550 5350 2650 5350
+Wire Wire Line
+	2550 5450 2650 5450
+Text Label 2650 5150 0    60   ~ 0
+SCK_B
+Text Label 5000 2600 2    60   ~ 0
+MOSI_B
+Text Label 5000 2450 2    60   ~ 0
+SCK_B
+Text Label 2650 5250 0    60   ~ 0
+MOSI_B
+Text Label 2650 5350 0    60   ~ 0
+~ENABLE_0_B
+Text Label 2650 5450 0    60   ~ 0
+~CS_DRIVER_0_B
+Text Label 5000 2300 2    60   ~ 0
+~ENABLE_0_B
+Text Label 5000 2900 2    60   ~ 0
+~CS_DRIVER_0_B
 $EndSCHEMATC

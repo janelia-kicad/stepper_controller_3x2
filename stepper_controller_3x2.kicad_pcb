@@ -1,4 +1,4 @@
-(kicad_pcb (version 20170922) (host pcbnew no-vcs-found-9bd5522~60~ubuntu16.04.1)
+(kicad_pcb (version 20170922) (host pcbnew no-vcs-found-a562525~60~ubuntu16.04.1)
 
 (general
   (thickness 1.6)
@@ -868,7 +868,7 @@
       (net 21 /tmc429_driver_0/REF_0) (solder_mask_margin 0.1016) (clearance 0.1016))
   )
 
-  (gr_text "2.5x5.5\nCenter +\n+12-42VDC" (at 149.86 98.425) (layer F.SilkS)
+  (gr_text "2.5x5.5\nCenter +\n+12-30VDC" (at 149.86 98.425) (layer F.SilkS)
     (effects (font (size 1.016 1.016) (thickness 0.254)))
   )
   (gr_text A+ (at 137.795 85.09) (layer F.SilkS) (tstamp 594434C1)
