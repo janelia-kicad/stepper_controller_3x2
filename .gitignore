@@ -8,5 +8,5 @@
 *~
 _autosave-*
 *.tmp
-*-cache.lib*
-*-rescue.lib*
+*-cache*
+*-rescue*
