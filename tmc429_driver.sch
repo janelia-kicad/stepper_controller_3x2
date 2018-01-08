@@ -1,7 +1,5 @@
-EESchema Schematic File Version 3
-LIBS:power
-LIBS:stepper_controller_3x2
-LIBS:components
+EESchema Schematic File Version 4
+LIBS:stepper_controller_3x2-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -17,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TMC429 U1
+L stepper_controller_3x2:TMC429 U1
 U 1 1 58DAADA9
 P 2200 2650
 F 0 "U1" H 2550 3600 60  0000 C CNN
@@ -45,7 +43,7 @@ Text HLabel 1500 2950 0    60   Output ~ 0
 Text HLabel 1500 3050 0    60   Output ~ 0
 POSCOMP
 $Comp
-L +3V3 #PWR022
+L power:+3V3 #PWR022
 U 1 1 58DAE642
 P 2200 1450
 F 0 "#PWR022" H 2200 1300 50  0001 C CNN
@@ -56,7 +54,7 @@ F 3 "" H 2200 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR026
+L power:GND #PWR026
 U 1 1 58DAE6A2
 P 2200 3850
 F 0 "#PWR026" H 2200 3600 50  0001 C CNN
@@ -67,7 +65,7 @@ F 3 "" H 2200 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 0.1uF C4
+L stepper_controller_3x2:0.1uF C4
 U 1 1 58DAE7A2
 P 1300 1300
 F 0 "C4" H 1300 1400 40  0000 L CNN
@@ -81,7 +79,7 @@ F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 1600 1700 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR021
+L power:+3V3 #PWR021
 U 1 1 58DAE83F
 P 1300 1050
 F 0 "#PWR021" H 1300 900 50  0001 C CNN
@@ -92,7 +90,7 @@ F 3 "" H 1300 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR023
+L power:GND #PWR023
 U 1 1 58DAE85E
 P 1300 1550
 F 0 "#PWR023" H 1300 1300 50  0001 C CNN
@@ -240,7 +238,7 @@ NoConn ~ 2800 2600
 NoConn ~ 2800 3000
 NoConn ~ 2800 3100
 $Comp
-L +3V3 #PWR024
+L power:+3V3 #PWR024
 U 1 1 594460C3
 P 3600 2600
 F 0 "#PWR024" H 3600 2450 50  0001 C CNN
@@ -262,7 +260,7 @@ Wire Wire Line
 	3600 2600 3600 2800
 Connection ~ 3600 2650
 $Comp
-L +3V3 #PWR025
+L power:+3V3 #PWR025
 U 1 1 594464FB
 P 3600 3100
 F 0 "#PWR025" H 3600 2950 50  0001 C CNN
@@ -276,7 +274,7 @@ Wire Wire Line
 	3600 3100 3600 3300
 Connection ~ 3600 3150
 $Comp
-L SN74ABT541BDWR U2
+L stepper_controller_3x2:SN74ABT541BDWR U2
 U 1 1 59EFAB85
 P 2200 5500
 F 0 "U2" H 2400 6150 60  0000 C CNN
@@ -290,7 +288,7 @@ F 6 "Buffer Non-Inverting 1 Element 8 Bit per Element Push-Pull Output 20-SOIC" 
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR031
+L power:GND #PWR031
 U 1 1 59EFAFE8
 P 2200 6250
 F 0 "#PWR031" H 2200 6000 50  0001 C CNN
@@ -303,7 +301,7 @@ $EndComp
 Wire Wire Line
 	2200 6200 2200 6250
 $Comp
-L 0.1uF C5
+L stepper_controller_3x2:0.1uF C5
 U 1 1 59EFB229
 P 850 5500
 F 0 "C5" H 850 5600 40  0000 L CNN
@@ -317,7 +315,7 @@ F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 1150 5900 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR030
+L power:GND #PWR030
 U 1 1 59EFB965
 P 1800 6100
 F 0 "#PWR030" H 1800 5850 50  0001 C CNN
@@ -335,7 +333,7 @@ Wire Wire Line
 	1850 6050 1800 6050
 Connection ~ 1800 6050
 $Comp
-L GND #PWR029
+L power:GND #PWR029
 U 1 1 59EFBC0B
 P 850 5750
 F 0 "#PWR029" H 850 5500 50  0001 C CNN
@@ -346,7 +344,7 @@ F 3 "" H 850 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR028
+L power:+5V #PWR028
 U 1 1 59EFBCB7
 P 850 5250
 F 0 "#PWR028" H 850 5100 50  0001 C CNN
@@ -357,7 +355,7 @@ F 3 "" H 850 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR027
+L power:+5V #PWR027
 U 1 1 59EFBD0B
 P 2200 4750
 F 0 "#PWR027" H 2200 4600 50  0001 C CNN

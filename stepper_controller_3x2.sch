@@ -1,7 +1,5 @@
-EESchema Schematic File Version 3
-LIBS:power
-LIBS:stepper_controller_3x2
-LIBS:components
+EESchema Schematic File Version 4
+LIBS:stepper_controller_3x2-cache
 EELAYER 26 0
 EELAYER END
 $Descr A 11000 8500
@@ -17,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MODULAR_DEVICE_BASE_3X2_MALE MDB1
+L stepper_controller_3x2:MODULAR_DEVICE_BASE_3X2_MALE MDB1
 U 1 1 589B6745
 P 2650 1550
 F 0 "MDB1" H 2650 2547 60  0000 C CNN
@@ -32,7 +30,7 @@ F 7 "2" H 1900 1250 60  0001 C CNN "PartCount"
 	1    0    0    -1  
 $EndComp
 $Comp
-L VDD #PWR01
+L power:VDD #PWR01
 U 1 1 589B67C3
 P 1350 750
 F 0 "#PWR01" H 100 -400 50  0001 C CNN
@@ -43,7 +41,7 @@ F 3 "" H 100 -250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG02
+L power:PWR_FLAG #FLG02
 U 1 1 589B67D9
 P 1100 750
 F 0 "#FLG02" H -150 -175 50  0001 C CNN
@@ -56,12 +54,12 @@ $EndComp
 Wire Wire Line
 	1100 750  1100 800 
 Wire Wire Line
-	1100 800  1400 800 
+	1100 800  1350 800 
 Wire Wire Line
 	1350 750  1350 800 
 Connection ~ 1350 800 
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 589B67FE
 P 700 950
 F 0 "#PWR03" H -500 -650 50  0001 C CNN
@@ -72,7 +70,7 @@ F 3 "" H -500 -400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG01
+L power:PWR_FLAG #FLG01
 U 1 1 589B6835
 P 700 750
 F 0 "#FLG01" H -550 -175 50  0001 C CNN
@@ -83,7 +81,7 @@ F 3 "" H -550 -250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	700  750  700  950 
+	700  750  700  900 
 Wire Wire Line
 	700  900  1400 900 
 Connection ~ 700  900 
@@ -100,7 +98,7 @@ NoConn ~ 3900 1400
 NoConn ~ 3900 1500
 NoConn ~ 3900 2300
 $Comp
-L VEE #PWR02
+L power:VEE #PWR02
 U 1 1 589B69B5
 P 4450 800
 F 0 "#PWR02" H 200 -50 50  0001 C CNN
@@ -111,7 +109,7 @@ F 3 "" H 200 100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG03
+L power:PWR_FLAG #FLG03
 U 1 1 589B69CA
 P 4750 800
 F 0 "#FLG03" H 3500 -125 50  0001 C CNN
@@ -124,7 +122,7 @@ $EndComp
 Wire Wire Line
 	4750 900  4750 800 
 Wire Wire Line
-	3900 900  4750 900 
+	3900 900  4450 900 
 Wire Wire Line
 	4450 800  4450 900 
 Connection ~ 4450 900 
@@ -200,7 +198,7 @@ Wire Wire Line
 Text Label 1300 1200 2    60   ~ 0
 ENABLE_0
 $Comp
-L +3V3 #PWR04
+L power:+3V3 #PWR04
 U 1 1 58DAE339
 P 4900 1050
 F 0 "#PWR04" H 4900 900 50  0001 C CNN
@@ -211,7 +209,7 @@ F 3 "" H 4900 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG04
+L power:PWR_FLAG #FLG04
 U 1 1 58DAE378
 P 5100 950
 F 0 "#FLG04" H 3850 25  50  0001 C CNN
@@ -224,14 +222,14 @@ $EndComp
 Wire Wire Line
 	5100 1100 5100 950 
 Wire Wire Line
-	3900 1100 5100 1100
+	3900 1100 4900 1100
 Wire Wire Line
 	4900 1050 4900 1100
 Connection ~ 4900 1100
 Text Label 5650 2650 2    60   ~ 0
 ENABLE_0
 $Comp
-L 0.1uF C1
+L stepper_controller_3x2:0.1uF C1
 U 1 1 58DC3529
 P 2950 3700
 F 0 "C1" H 2950 3800 40  0000 L CNN
@@ -245,7 +243,7 @@ F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 3250 4100 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CLK_32MHZ CLK1
+L stepper_controller_3x2:CLK_32MHZ CLK1
 U 1 1 58DC3A32
 P 3900 3700
 F 0 "CLK1" H 4150 4000 60  0000 C CNN
@@ -259,7 +257,7 @@ F 6 "OSC XO 32.000MHZ HCMOS TTL SMD" H 4450 4300 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR05
+L power:+3V3 #PWR05
 U 1 1 58DC412F
 P 3900 3300
 F 0 "#PWR05" H 3900 3150 50  0001 C CNN
@@ -270,7 +268,7 @@ F 3 "" H 3900 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR06
+L power:+3V3 #PWR06
 U 1 1 58DC4287
 P 2950 3450
 F 0 "#PWR06" H 2950 3300 50  0001 C CNN
@@ -281,7 +279,7 @@ F 3 "" H 2950 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 58DC43BE
 P 2950 3950
 F 0 "#PWR012" H 1750 2350 50  0001 C CNN
@@ -292,7 +290,7 @@ F 3 "" H 1750 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 58DC4579
 P 3900 4100
 F 0 "#PWR013" H 2700 2500 50  0001 C CNN
@@ -311,7 +309,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 4100 3900 4050
 $Comp
-L +3V3 #PWR010
+L power:+3V3 #PWR010
 U 1 1 58DC4A3D
 P 3500 3650
 F 0 "#PWR010" H 3500 3500 50  0001 C CNN
@@ -343,7 +341,7 @@ NoConn ~ 3900 1600
 NoConn ~ 3900 1700
 NoConn ~ 3900 1800
 $Comp
-L PWR_JACK_2.5x5.5 P1
+L stepper_controller_3x2:PWR_JACK_2.5x5.5 P1
 U 1 1 59434A6F
 P 1500 3700
 F 0 "P1" H 1500 3850 50  0000 C CNN
@@ -357,7 +355,7 @@ F 6 "CONN PWR JACK DC 2.5X5.5 8A T/H" H 1800 4150 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 5943521D
 P 1250 3800
 F 0 "#PWR011" H 50  2200 50  0001 C CNN
@@ -368,7 +366,7 @@ F 3 "" H 50  2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VAA #PWR07
+L power:VAA #PWR07
 U 1 1 59435601
 P 1250 3600
 F 0 "#PWR07" H 1250 3450 50  0001 C CNN
@@ -379,7 +377,7 @@ F 3 "" H 1250 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG05
+L power:PWR_FLAG #FLG05
 U 1 1 594359C9
 P 1150 3500
 F 0 "#FLG05" H -100 2575 50  0001 C CNN
@@ -392,7 +390,7 @@ $EndComp
 Wire Wire Line
 	1150 3500 1150 3650
 Wire Wire Line
-	1150 3650 1300 3650
+	1150 3650 1250 3650
 Wire Wire Line
 	1250 3600 1250 3650
 Connection ~ 1250 3650
@@ -401,7 +399,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 3750 1250 3800
 $Comp
-L diode_schottky_45V_10A D1
+L stepper_controller_3x2:diode_schottky_45V_10A D1
 U 1 1 59436570
 P 2150 3700
 F 0 "D1" H 2150 3587 50  0000 C CNN
@@ -415,7 +413,7 @@ F 6 "DIODE SCHOTTKY 45V 10A CFP15" H 2400 4080 60  0001 C CNN "Description"
 	-1   0    0    1   
 $EndComp
 $Comp
-L VAA #PWR08
+L power:VAA #PWR08
 U 1 1 594366F0
 P 2000 3650
 F 0 "#PWR08" H 2000 3500 50  0001 C CNN
@@ -426,7 +424,7 @@ F 3 "" H 2000 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VDD #PWR09
+L power:VDD #PWR09
 U 1 1 5943688C
 P 2300 3650
 F 0 "#PWR09" H 1050 2500 50  0001 C CNN
@@ -449,7 +447,7 @@ NoConn ~ 3900 2000
 NoConn ~ 1400 1300
 NoConn ~ 1400 1400
 $Comp
-L 10uF C2
+L stepper_controller_3x2:10uF C2
 U 1 1 59EF5409
 P 2600 5100
 F 0 "C2" H 2715 5130 40  0000 L CNN
@@ -463,7 +461,7 @@ F 6 "CAP CER 10UF 50V 10% X7S 1210" H 2900 5500 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONV_DC_DC_5V_1A REG1
+L stepper_controller_3x2:CONV_DC_DC_5V_1A REG1
 U 1 1 59EF57EA
 P 3200 4850
 F 0 "REG1" H 3200 5097 60  0000 C CNN
@@ -477,7 +475,7 @@ F 6 "CONV DC/DC 1A 5V OUT SIP VERT" H 3700 4850 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 10uF C3
+L stepper_controller_3x2:10uF C3
 U 1 1 59EF58EF
 P 3800 5100
 F 0 "C3" H 3915 5130 40  0000 L CNN
@@ -491,15 +489,15 @@ F 6 "CAP CER 10UF 50V 10% X7S 1210" H 4100 5500 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 4800 2600 4900
+	2600 4800 2600 4850
 Wire Wire Line
 	2600 4850 2800 4850
 Wire Wire Line
 	3600 4850 3800 4850
 Wire Wire Line
-	3800 4800 3800 4900
+	3800 4800 3800 4850
 $Comp
-L GND #PWR018
+L power:GND #PWR018
 U 1 1 59EF5A4D
 P 2600 5350
 F 0 "#PWR018" H 1400 3750 50  0001 C CNN
@@ -510,7 +508,7 @@ F 3 "" H 1400 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR017
+L power:GND #PWR017
 U 1 1 59EF5AC9
 P 3200 5250
 F 0 "#PWR017" H 2000 3650 50  0001 C CNN
@@ -521,7 +519,7 @@ F 3 "" H 2000 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L power:GND #PWR019
 U 1 1 59EF5BE3
 P 3800 5350
 F 0 "#PWR019" H 2600 3750 50  0001 C CNN
@@ -538,7 +536,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 5300 3800 5350
 $Comp
-L VAA #PWR015
+L power:VAA #PWR015
 U 1 1 59EF5E42
 P 2600 4800
 F 0 "#PWR015" H 2600 4650 50  0001 C CNN
@@ -550,7 +548,7 @@ F 3 "" H 2600 4800 50  0001 C CNN
 $EndComp
 Connection ~ 2600 4850
 $Comp
-L +5V #PWR016
+L power:+5V #PWR016
 U 1 1 59EF61AD
 P 3800 4800
 F 0 "#PWR016" H 3800 4650 50  0001 C CNN
@@ -562,7 +560,7 @@ F 3 "" H 3800 4800 50  0001 C CNN
 $EndComp
 Connection ~ 3800 4850
 $Comp
-L 1k R1
+L stepper_controller_3x2:1k R1
 U 1 1 59EF718A
 P 4250 5100
 F 0 "R1" H 4300 5100 40  0000 L CNN
@@ -576,7 +574,7 @@ F 6 "RES SMD 1K OHM 1% 1/2W 1210" V 4630 5400 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR020
+L power:GND #PWR020
 U 1 1 59EF7D3C
 P 4250 5400
 F 0 "#PWR020" H 3050 3800 50  0001 C CNN
@@ -587,7 +585,7 @@ F 3 "" H 3050 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR014
+L power:+5V #PWR014
 U 1 1 59EF7DBC
 P 4250 4750
 F 0 "#PWR014" H 4250 4600 50  0001 C CNN
@@ -598,7 +596,7 @@ F 3 "" H 4250 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 4750 4250 4850
+	4250 4750 4250 4800
 Wire Wire Line
 	4250 5350 4250 5400
 Text Label 4350 4800 0    60   ~ 0
@@ -610,4 +608,20 @@ Text Label 4000 1200 0    60   ~ 0
 PWR_DRV
 Wire Wire Line
 	3900 1200 4000 1200
+Wire Wire Line
+	1350 800  1400 800 
+Wire Wire Line
+	700  900  700  950 
+Wire Wire Line
+	4450 900  4750 900 
+Wire Wire Line
+	4900 1100 5100 1100
+Wire Wire Line
+	1250 3650 1300 3650
+Wire Wire Line
+	2600 4850 2600 4900
+Wire Wire Line
+	3800 4850 3800 4900
+Wire Wire Line
+	4250 4800 4250 4850
 $EndSCHEMATC

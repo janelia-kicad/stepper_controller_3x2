@@ -1,6 +1,12 @@
-# temp files
+# For PCBs designed using KiCad: http://www.kicad-pcb.org/
+
+# Temporary files
+*.000
 *.bak
 *.bck
 *.kicad_pcb-bak
-*-cache.lib
-# *-rescue.lib
+*~
+_autosave-*
+*.tmp
+*-cache.lib*
+*-rescue.lib*
