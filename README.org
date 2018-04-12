@@ -1,0 +1,7 @@
+#+TITLE: stepper_controller_3x2
+#+AUTHOR: Peter Polidoro
+#+EMAIL: peterpolidoro@gmail.com
+
+* Repository Information
+  - Author :: Peter Polidoro
+  - License :: Open-Source Hardware
