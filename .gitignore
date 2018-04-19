@@ -10,3 +10,4 @@ _autosave-*
 *.tmp
 *-cache*
 *-rescue*
+.DS_Store
