@@ -1,0 +1,11 @@
+* Supplemental Bill of Materials
+#+RESULTS: supplemental-parts
+| Item | Quantity | PartNumber       | Vendor  | Description                       |
+|------+----------+------------------+---------+-----------------------------------|
+|    1 |        1 | 277-1013-ND      | digikey | TERM BLOCK PLUG 4POS STR 5.08MM   |
+|    2 |        1 | 277-1042-ND      | digikey | TERM BLOCK PLUG 4POS 5.08MM       |
+|    3 |        1 | 277-1163-ND      | digikey | TERM BLOCK PLUG 4POS STR 3.81MM   |
+|    4 |        1 | 277-1193-ND      | digikey | TERM BLOCK PLUG 4POS 90DEG 3.81MM |
+|    5 |        1 | 1460-1187-ND     | digikey | TMC2130 STEPPER DRIVER BOARD      |
+|    6 |        1 | 501100B00000G-ND | digikey | HEATSINK 14-DIP/16-DIP            |
+|    7 |        1 | 3M10315-ND       | digikey | TAPE ADHESIVE TRANSFER 1/2in X5YD |

@@ -1,0 +1,25 @@
+* Header                                                           :noexport:
+
+  #+MACRO: name stepper_controller_3x2
+  #+MACRO: version 1.2
+  #+MACRO: license Open-Source Hardware
+  #+MACRO: url https://github.com/janelia-kicad/stepper_controller_3x2
+  #+AUTHOR: Peter Polidoro
+  #+EMAIL: peterpolidoro@gmail.com
+
+* Description
+
+  This board controls 1 stepper motor with optional forward and reverse
+  limit switches.
+
+* Assembly Instructions
+
+  - Solder header pins into the stepper driver board, making note of TOP label.
+    Insert header pins on bottom of board so that the long unsoldered header
+    pins point down when the TOP label faces up.
+  - Expose one side of the thermal adhesive tape and attach to the bottom of the
+    heatsink. Trim tape so it does not extend beyond heatsink edges.
+  - Expose the other side of the thermal adhesive tape and attach the heatsink
+    to the stepper driver board on the side with the TOP label.
+  - Solder surface mount and through hole components onto the pcb.
+  - Insert stepper driver board into pin receptacles.
