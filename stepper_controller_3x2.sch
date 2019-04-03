@@ -1,13 +1,12 @@
-EESchema Schematic File Version 4
-LIBS:stepper_controller_3x2-cache
-EELAYER 26 0
+EESchema Schematic File Version 5
+EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 3
 Title "stepper_controller_3x2"
 Date ""
-Rev "1.0"
+Rev "1.2"
 Comp "Janelia"
 Comment1 ""
 Comment2 ""
@@ -145,17 +144,17 @@ Wire Wire Line
 	1400 2100 1300 2100
 Wire Wire Line
 	1400 2200 1300 2200
-Text Label 1300 2100 2    60   ~ 0
+Text Label 1300 2100 2    60   ~ 6
 MOSI
-Text Label 1300 2200 2    60   ~ 0
+Text Label 1300 2200 2    60   ~ 6
 MISO
 Wire Wire Line
 	1400 2000 1300 2000
-Text Label 1300 2000 2    60   ~ 0
+Text Label 1300 2000 2    60   ~ 6
 CS_429
 Wire Wire Line
 	3900 2200 4000 2200
-Text Label 4000 2200 0    60   ~ 0
+Text Label 4000 2200 0    60   ~ 6
 SCK
 Wire Wire Line
 	5750 1750 5650 1750
@@ -163,31 +162,31 @@ Wire Wire Line
 	5750 1950 5650 1950
 Wire Wire Line
 	5750 2050 5650 2050
-Text Label 5650 1950 2    60   ~ 0
+Text Label 5650 1950 2    60   ~ 6
 SCK
-Text Label 5650 1750 2    60   ~ 0
+Text Label 5650 1750 2    60   ~ 6
 CLK
-Text Label 5650 2050 2    60   ~ 0
+Text Label 5650 2050 2    60   ~ 6
 MOSI
 Wire Wire Line
 	5750 2150 5650 2150
-Text Label 5650 2150 2    60   ~ 0
+Text Label 5650 2150 2    60   ~ 6
 CS_429
 Wire Wire Line
 	6800 1950 6900 1950
 Wire Wire Line
 	6800 2050 6900 2050
-Text Label 6900 1950 0    60   ~ 0
+Text Label 6900 1950 0    60   ~ 6
 INT
-Text Label 6900 2050 0    60   ~ 0
+Text Label 6900 2050 0    60   ~ 6
 POSCOMP
 Wire Wire Line
 	6800 1750 6900 1750
-Text Label 6900 1750 0    60   ~ 0
+Text Label 6900 1750 0    60   ~ 6
 MISO
-Text Label 1300 1500 2    60   ~ 0
+Text Label 1300 1500 2    60   ~ 6
 INT
-Text Label 1300 1600 2    60   ~ 0
+Text Label 1300 1600 2    60   ~ 6
 POSCOMP
 Wire Wire Line
 	1400 1200 1300 1200
@@ -195,7 +194,7 @@ Wire Wire Line
 	1400 1500 1300 1500
 Wire Wire Line
 	1400 1600 1300 1600
-Text Label 1300 1200 2    60   ~ 0
+Text Label 1300 1200 2    60   ~ 6
 ENABLE_0
 $Comp
 L power:+3V3 #PWR04
@@ -226,7 +225,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 1050 4900 1100
 Connection ~ 4900 1100
-Text Label 5650 2650 2    60   ~ 0
+Text Label 5650 2650 2    60   ~ 6
 ENABLE_0
 $Comp
 L stepper_controller_3x2:0.1uF C1
@@ -325,15 +324,15 @@ Wire Wire Line
 	3500 3700 3550 3700
 Wire Wire Line
 	4250 3700 4350 3700
-Text Label 4350 3700 0    60   ~ 0
+Text Label 4350 3700 0    60   ~ 6
 CLK
 Wire Wire Line
 	3900 2100 4000 2100
-Text Label 4000 2100 0    60   ~ 0
+Text Label 4000 2100 0    60   ~ 6
 CS_DRIVER_0
 Wire Wire Line
 	5650 2650 5750 2650
-Text Label 5650 2250 2    60   ~ 0
+Text Label 5650 2250 2    60   ~ 6
 CS_DRIVER_0
 Wire Wire Line
 	5650 2250 5750 2250
@@ -559,55 +558,6 @@ F 3 "" H 3800 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3800 4850
-$Comp
-L stepper_controller_3x2:1k R1
-U 1 1 59EF718A
-P 4250 5100
-F 0 "R1" H 4300 5100 40  0000 L CNN
-F 1 "1k" V 4250 5100 40  0000 C CNN
-F 2 "stepper_controller_3x2:SM1210" V 4180 5100 30  0001 C CNN
-F 3 "" H 4250 5100 30  0000 C CNN
-F 4 "digikey" V 4430 5200 60  0001 C CNN "Vendor"
-F 5 "P1.00KAACT-ND" V 4530 5300 60  0001 C CNN "PartNumber"
-F 6 "RES SMD 1K OHM 1% 1/2W 1210" V 4630 5400 60  0001 C CNN "Description"
-	1    4250 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR020
-U 1 1 59EF7D3C
-P 4250 5400
-F 0 "#PWR020" H 3050 3800 50  0001 C CNN
-F 1 "GND" H 4255 5227 50  0000 C CNN
-F 2 "" H 3050 4050 50  0001 C CNN
-F 3 "" H 3050 4050 50  0001 C CNN
-	1    4250 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR014
-U 1 1 59EF7DBC
-P 4250 4750
-F 0 "#PWR014" H 4250 4600 50  0001 C CNN
-F 1 "+5V" H 4265 4923 50  0000 C CNN
-F 2 "" H 4250 4750 50  0001 C CNN
-F 3 "" H 4250 4750 50  0001 C CNN
-	1    4250 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 4750 4250 4800
-Wire Wire Line
-	4250 5350 4250 5400
-Text Label 4350 4800 0    60   ~ 0
-PWR_DRV
-Wire Wire Line
-	4250 4800 4350 4800
-Connection ~ 4250 4800
-Text Label 4000 1200 0    60   ~ 0
-PWR_DRV
-Wire Wire Line
-	3900 1200 4000 1200
 Wire Wire Line
 	1350 800  1400 800 
 Wire Wire Line
@@ -622,6 +572,5 @@ Wire Wire Line
 	2600 4850 2600 4900
 Wire Wire Line
 	3800 4850 3800 4900
-Wire Wire Line
-	4250 4800 4250 4850
+NoConn ~ 3900 1200
 $EndSCHEMATC
