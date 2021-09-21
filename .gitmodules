@@ -1,3 +1,0 @@
-[submodule "generate_kicad_documentation"]
-	path = generate_kicad_documentation
-	url = https://github.com/janelia-kicad/generate_kicad_documentation.git
